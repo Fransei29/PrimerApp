@@ -1,0 +1,13 @@
+version: '3'
+services:
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=${USER}
+      - POSTGRES_HOST=${HOST}
+      - POSTGRES_DB=${DATABASE}
+      - POSTGRES_PASSWORD=${PASSWORD}
+      - POSTGRES_PORT=${PORT}
+
+
+# PARA EJECUTAR = docker-compose up
